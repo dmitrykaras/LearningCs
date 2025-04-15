@@ -1,0 +1,7 @@
+I:\git\Sharps\l1\l1\l1\obj\Debug\l1.csproj.AssemblyReference.cache
+I:\git\Sharps\l1\l1\l1\obj\Debug\l1.csproj.CoreCompileInputs.cache
+I:\git\Sharps\l1\l1\l1\bin\Debug\l1.exe.config
+I:\git\Sharps\l1\l1\l1\bin\Debug\l1.exe
+I:\git\Sharps\l1\l1\l1\bin\Debug\l1.pdb
+I:\git\Sharps\l1\l1\l1\obj\Debug\l1.exe
+I:\git\Sharps\l1\l1\l1\obj\Debug\l1.pdb

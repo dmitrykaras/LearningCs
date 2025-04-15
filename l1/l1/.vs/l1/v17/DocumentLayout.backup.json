@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "I:\\git\\Sharps\\l1\\l1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{883434D0-0D06-42F4-A0B2-1C1AF0DF3E31}|l1\\l1.csproj|i:\\git\\sharps\\l1\\l1\\l1\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{883434D0-0D06-42F4-A0B2-1C1AF0DF3E31}|l1\\l1.csproj|solutionrelative:l1\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{883434D0-0D06-42F4-A0B2-1C1AF0DF3E31}|l1\\l1.csproj|i:\\git\\sharps\\l1\\l1\\l1\\func.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{883434D0-0D06-42F4-A0B2-1C1AF0DF3E31}|l1\\l1.csproj|solutionrelative:l1\\func.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "func.cs",
+              "DocumentMoniker": "I:\\git\\Sharps\\l1\\l1\\l1\\func.cs",
+              "RelativeDocumentMoniker": "l1\\func.cs",
+              "ToolTip": "I:\\git\\Sharps\\l1\\l1\\l1\\func.cs",
+              "RelativeToolTip": "l1\\func.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T15:32:05.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cs",
+              "DocumentMoniker": "I:\\git\\Sharps\\l1\\l1\\l1\\main.cs",
+              "RelativeDocumentMoniker": "l1\\main.cs",
+              "ToolTip": "I:\\git\\Sharps\\l1\\l1\\l1\\main.cs",
+              "RelativeToolTip": "l1\\main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T19:38:44.158Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
