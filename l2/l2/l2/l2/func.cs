@@ -20,6 +20,7 @@ namespace func1
             return char.IsPunctuation(LastChar);
         }
 
+        //функция которая разворачивает строку (revers)
         static public string ReversString(string input)
         {
             StringBuilder reversed = new StringBuilder(input.Length); //StringBuilder - меняет содержимое строки без создания нового объекта

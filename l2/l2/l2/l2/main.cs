@@ -17,11 +17,15 @@ namespace func1
 
                 //если строка не заканчивается на знак припинаения, то выход из программы
                 if (!functions.EndsWithPunctuation(tmp))
+                {
+                    Console.WriteLine("Ошибка. Последний символ не пунктуация\n");
                     break;
+                }
 
                 //вывод строки
                 string result = functions.ReversString(tmp);
                 Console.WriteLine("Обратная строка" + result);
+                Console.WriteLine();
 
             }
         }
