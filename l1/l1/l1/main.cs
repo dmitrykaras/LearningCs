@@ -7,7 +7,7 @@ class main
     {
         while (true)
         {
-            Console.WriteLine("Выберите функцию:\n 1. SimpleFunction\n 2. ConditionFunction \n 3. LoopFunction \n 0. Выход");
+            Console.WriteLine("Выберите функцию:\n 1. Вычисления по уравнению\n 2. Функция состояния \n 3. Цекцлическая функция\n 0. Выход");
             Console.Write("Ваш выбор: ");
             int choice = int.Parse(Console.ReadLine());
 
