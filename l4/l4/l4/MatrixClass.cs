@@ -2,16 +2,16 @@
 
 public class Matrix
 {
-    private double[,] data = new double[4, 4];
+    private int[,] data = new int[4, 4];
 
     public Matrix() //конструктор по умолчанию с нулями
     {
         for (int i = 0; i < 4; i++)
             for (int j = 0; j < 4; j++)
-                data[i, j] = 0.0;
+                data[i, j] = 0;
     }
 
-    public Matrix(double[,] values) //конструктор с параметрами 
+    public Matrix(int[,] values) //конструктор с параметрами 
     {
         for (int i = 0; i < 4; i++)
             for (int j = 0; j < 4; j++)
@@ -30,7 +30,7 @@ public class Matrix
         Console.WriteLine("Деструктор вызван");
     }
 
-    public void SetElement(int row, int col, double value) //метод установки значения элемента
+    public void SetElement(int row, int col, int value) //метод установки значения элемента
     {
         data[row, col] = value;
     }
@@ -40,7 +40,7 @@ public class Matrix
         return data[row, col];
     }
 
-    public void MultiplyByScalar(double scalar) //метод умножения матрицы на число
+    public void MultiplyByScalar(int scalar) //метод умножения матрицы на число
     {
         for (int i = 0; i < 4; i++)
             for (int j = 0; j < 4; j++)
@@ -74,13 +74,30 @@ public class Matrix
         return result;
     }
 
-    public static Matrix ReadMatrix() //
+    public static Matrix ReadMatrix() //ввод массива с консоли
     {
-        double[,] values = new double[4, 4];
-        Console.WriteLine("Введите элементы матрицы 4x4:");
-        for (int i = 0; i < 4; i++)
+        int[,] values = new int[4, 4];
+        Console.WriteLine("Введите матрицу 4x4 (по 4 числа в строке через пробел):");
+
+        for (int i = 0; i < 4; i++) //ввод построчно, а не через enter
+        {
+            Console.Write($"Строка {i + 1}: ");
+            string? line = Console.ReadLine();
+            if (line == null) continue;
+
+            string[] parts = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+
+            if (parts.Length != 4)
+            {
+                Console.WriteLine("Ошибка: введите ровно 4 числа.");
+                i--; // повтор строки
+                continue;
+            }
+
             for (int j = 0; j < 4; j++)
-                values[i, j] = Convert.ToDouble(Console.ReadLine());
+                values[i, j] = int.Parse(parts[j]);
+        }
+
         return new Matrix(values);
     }
 
@@ -89,7 +106,7 @@ public class Matrix
         for (int i = 0; i < 4; i++)
         {
             for (int j = 0; j < 4; j++)
-                Console.Write($"{data[i, j],8:F2} ");
+                Console.Write($"{data[i, j],8} ");
             Console.WriteLine();
         }
     }

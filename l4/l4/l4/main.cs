@@ -5,7 +5,7 @@ class main
     static void Main()
     {
         Matrix m1 = new Matrix(); // по умолчанию
-        Matrix m2 = new Matrix(new double[,] {
+        Matrix m2 = new Matrix(new int[,] {
             {1,2,3,4},
             {5,6,7,8},
             {9,10,11,12},
@@ -42,7 +42,7 @@ class main
                     Console.Write("Введите j(0-3): ");
                     int j = int.Parse(Console.ReadLine());
                     Console.Write("Введите значение: ");
-                    double v = double.Parse(Console.ReadLine());
+                    int v = int.Parse(Console.ReadLine());
                     if (i < 0 || i > 3 || j < 0 || j > 3)
                     {
                         Console.WriteLine("Индексы должны быть от 0 до 3.");
@@ -66,7 +66,7 @@ class main
                     {
                         case 1:
                             Console.Write("Введите число: ");
-                            double s = double.Parse(Console.ReadLine());
+                            int s = int.Parse(Console.ReadLine());
                             m2.MultiplyByScalar(s);
                             m2.Print();
                             break;
